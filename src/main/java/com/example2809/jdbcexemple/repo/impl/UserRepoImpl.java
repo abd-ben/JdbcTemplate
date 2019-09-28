@@ -32,17 +32,17 @@ public class UserRepoImpl implements UserRepo {
     public User findById(Integer id) {
         return jdbc.queryForObject(
                 "select id, name, address, phone from User where id=?",
-                this::mapRowToIngredient, id);
+                this::mapRowToUser, id);
     }
 
     @Override
     public Iterable<User> findAll() {
         return jdbc.query("select id, name, address, phone from User",
-                this::mapRowToIngredient);
+                this::mapRowToUser);
 
     }
 
-    private User mapRowToIngredient(ResultSet rs, int rowNum)
+    private User mapRowToUser(ResultSet rs, int rowNum)
             throws SQLException {
         return new User(
                 rs.getInt("id"),

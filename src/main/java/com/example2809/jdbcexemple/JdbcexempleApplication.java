@@ -9,7 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class   JdbcexempleApplication{
 
   public static void main(String[] args){
-      SpringApplication.run(JdbcexempleApplication.class, args);
 
-}
+                        SpringApplication.run(JdbcexempleApplication.class, args);
+
+                                            }
+
+
                     }

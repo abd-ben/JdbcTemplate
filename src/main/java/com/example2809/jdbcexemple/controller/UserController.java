@@ -8,24 +8,24 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserController {
 
-    private final UserRepo userRepo;
+  private final UserRepo userRepo;
 
-    public UserController(UserRepo userRepo) {
-        this.userRepo = userRepo;
-    }
+  public UserController(UserRepo userRepo) {
+    this.userRepo = userRepo;
+  }
 
-    @GetMapping("/{id}")
-    public User getUserById(@PathVariable("id") Integer id) {
-        return userRepo.findById(id);
-    }
+  @GetMapping("/{id}")
+  public User getUserById(@PathVariable("id") Integer id) {
+    return userRepo.findById(id);
+  }
 
-    @GetMapping
-    public Iterable<User> getAllUsers() {
-        return userRepo.findAll();
-    }
+  @GetMapping
+  public Iterable<User> getAllUsers() {
+    return userRepo.findAll();
+  }
 
-    @PostMapping
-    public User createUser(@RequestBody User user) {
-        return userRepo.create(user);
-    }
+  @PostMapping
+  public User createUser(@RequestBody User user) {
+    return userRepo.create(user);
+  }
 }

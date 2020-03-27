@@ -81,10 +81,12 @@
                 </executions>
                 <configuration>
                     <googleJavaFormatOptions>
+<!--
                         <aosp>false</aosp>
                         <fixImportsOnly>false</fixImportsOnly>
                         <skipSortingImports>false</skipSortingImports>
                         <skipRemovingUnusedImports>false</skipRemovingUnusedImports>
+-->
                     </googleJavaFormatOptions>
                 </configuration>
             </plugin>

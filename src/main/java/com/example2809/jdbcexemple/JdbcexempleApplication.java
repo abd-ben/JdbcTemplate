@@ -6,12 +6,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JdbcexempleApplication {
+public class   JdbcexempleApplication{
 
-  public static void main(String[] args) {
-    SpringApplication.run(JdbcexempleApplication.class, args);
+  public static void main(String[] args){
+      SpringApplication.run(JdbcexempleApplication.class, args);
 
-    List<Integer> cxcx = new ArrayList<>();
-    cxcx.add(12);
-  }
 }
+                    }
